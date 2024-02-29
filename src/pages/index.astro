@@ -1,0 +1,19 @@
+---
+import { Counter } from "../components/react";
+import { CounterSvelte } from "../components/svelte";
+---
+
+<section class="p-4">
+	<h1 class="text-primary text-3xl font-bold">
+		Mis primeros pasos con astro
+	</h1>
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sit a!
+		Soluta minus at, laudantium quisquam blanditiis, dolore accusantium ipsa
+		consequatur aliquid explicabo provident molestiae fugit recusandae qui
+		pariatur veniam!
+	</p>
+
+	<Counter client:load />
+	<CounterSvelte client:load />
+</section>
